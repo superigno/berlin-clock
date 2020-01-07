@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
     tools {
@@ -7,7 +8,7 @@ pipeline {
     stages {
         stage('Install') {
             steps {
-                sh "mvn clean test"
+                sh "mvn -U clean test cobertura:cobertura -Dcobertura.report.format=xml"
             }
             post {
                 always {
