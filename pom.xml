@@ -14,11 +14,11 @@
     </properties>
 	
 	 <distributionManagement>
-        <repository>
+        <snapshotRepository>
             <id>artifactory</id>
             <name>artifactory</name>
             <url>${artifactory_url}</url>
-        </repository>
+        </snapshotRepository>
     </distributionManagement>
 
     <build>
