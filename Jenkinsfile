@@ -1,13 +1,7 @@
 pipeline {
     agent any
     tools {
-        
-/**      Uncomment if want to have specific java versions installed, otherwise maven tool will use jenkins default embedded java 8
- *       you will also need to uncomment java related stuff in java.groovy from dockerize jenkins project and make sure you have these java versions
- *       in your download folder
- */
-
-//        jdk 'jdk8'
+        jdk 'jdk8'
         maven 'maven3'
     }
     stages {
